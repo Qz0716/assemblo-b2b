@@ -23,24 +23,92 @@ export default function Home() {
             </a>
           </nav>
 
-          <a
-            href="#contact"
-            className="rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
-          >
-            제작 문의
-          </a>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="http://lpeoplegift.com/main/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-gray-50"
+            >
+              기프트샵
+            </a>
+
+            <a
+              href="#contact"
+              className="rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
+            >
+              제작 문의
+            </a>
+          </div>
         </div>
       </header>
 
-      {/* HERO */}
-      <section className="relative overflow-hidden">
+      {/* HERO - MOBILE */}
+      <section className="border-b border-gray-200 bg-[#f7f7f5] md:hidden">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14">
+          {/* TEXT */}
+          <div>
+            <span className="inline-flex rounded-full border border-gray-300 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-gray-600">
+              B2B Custom Goods Solution
+            </span>
+
+            <h1 className="mt-5 text-4xl font-extrabold leading-tight tracking-tight text-[#0f172a]">
+              브랜드를 위한
+              <br />
+              맞춤 제작 굿즈
+            </h1>
+
+            <p className="mt-6 max-w-xl text-base leading-8 text-gray-700">
+              기업 굿즈, 웰컴키트, 브랜드 키트, 프로모션 굿즈까지.
+              기획부터 생산, 납품까지 브랜드에 맞는 제작 솔루션을 제공합니다.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              >
+                제작 문의하기
+              </a>
+              <a
+                href="#portfolio"
+                className="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition hover:bg-gray-50"
+              >
+                포트폴리오 보기
+              </a>
+            </div>
+
+            <div className="mt-10 flex flex-col gap-2.5 text-sm text-gray-600">
+              <span>기업 · 브랜드 · 이벤트 제작</span>
+              <span>소량~대량 생산 대응</span>
+              <span>패키지/인쇄 커스터마이징</span>
+            </div>
+          </div>
+
+          {/* IMAGE */}
+          <div>
+            <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm">
+              <div className="aspect-[4/4.6]">
+                <img
+                  src="/images/hero.jpg"
+                  alt="맞춤 제작 굿즈 메인 비주얼"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* HERO - DESKTOP */}
+      <section className="relative hidden overflow-hidden md:block">
         <div className="absolute inset-0">
           <img
             src="/images/hero.jpg"
             alt="맞춤 제작 굿즈 메인 비주얼"
             className="h-full w-full object-cover"
           />
-
         </div>
 
         <div className="relative mx-auto max-w-6xl px-6 py-28 md:py-32">
