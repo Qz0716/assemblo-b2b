@@ -89,13 +89,10 @@ export default function Home() {
           {/* IMAGE */}
           <div>
             <div className="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm">
-              <div className="aspect-[4/4.6]">
-                <img
-                  src="/images/hero.jpg"
-                  alt="맞춤 제작 굿즈 메인 비주얼"
-                  className="h-full w-full object-cover"
-                />
-              </div>
+              <img
+                src="/images/main-mobile.jpg"
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
         </div>
@@ -105,7 +102,7 @@ export default function Home() {
       <section className="relative hidden overflow-hidden md:block">
         <div className="absolute inset-0">
           <img
-            src="/images/hero.jpg"
+            src="/images/main-pc.jpg"
             alt="맞춤 제작 굿즈 메인 비주얼"
             className="h-full w-full object-cover"
           />
